@@ -23,6 +23,7 @@ p { /*Will apply to all generic paragraph lines of code throughout every page; w
     width: 35%;
     margin: 50px;
     text-transform: uppercase;
+    display: flex;
 }
 
 nav ul li { /*Moves my directory (of all three pages) to the center)*/
