@@ -1,0 +1,57 @@
+/* A couple entities that will apply to all of my pages */
+body { /* The following pieces will apply to my entire body of content*/
+  background-color: #FFC72C; /* Entire body of content with the background color of the specific Quipli gold logo*/
+  font-family:'Times New Roman', Times, serif; /*Assigns font for all pages */
+  color: black /*Text color for all pages*/
+}
+
+p { /*Will apply to all generic paragraph lines of code throughout every page; wanted to make a little bit bigger*/
+  font-size: 24px; 
+  font-weight: bold;
+}
+
+
+/*Containers for my index page start*/
+.get_started, .get_started_2 { /* Using these two div classes will apply to both of my boxes in the header*/
+    border: 2px solid black; /* Border around both the contact us and customer reviews boxes*/
+    background-color: white; /* Code that fills the back-ground color of the box itself */
+    padding: 25px; /*For spacing purposes*/
+    text-align: center; /*Text sits in the center of each box*/
+    color: black; /* Color the text in the center is written in*/
+    font-size: 30px; 
+    display: inline-block; /* Sets up specifications below (width, margin) */
+    width: 35%;
+    margin: 50px;
+    text-transform: uppercase;
+}
+
+nav ul li { /*Moves my directory (of all three pages) to the center)*/
+  list-style-type: none; /* Used chat gpt to get rid of bullet points from unordered list*/
+  margin: 20px 20px 20px 20px; /*Spacing for all of my sections separated between one another*/
+  list-style-type: none; /*Gets rid of bullet points I made in HTML*/
+  text-align: center; /*Aligned in the middle of the page*/
+  font-weight: bold; /* Bolded writing */
+  font-size: 20px; 
+  text-transform: uppercase;
+}
+
+
+.core_values { 
+  text-align: right;
+  list-style-type: none; /* Used chat gpt to get rid of bullet points from unordered list*/
+}
+
+
+
+/* Containers for my form page starts */
+
+form { /*Will apply to both the customer feedback dropbox and the employee feedback dropbox*/
+  display: inline-block; /* Eligible for properties below like width, border, height, etc*/
+  border: 1px solid #cccccc; /* Code for the border that will surround both of the form dropboxes*/
+  box-shadow: 0px 2px 2px black, 0px 0px 5px black; /* Each of these pixel specifications cover the height, width, and length of the shadow or essentially the radius*/
+  border-radius: 10px 20px 15px 5px; 
+  margin: 4px; /*Sets a 4 pixel margin on all sides*/
+  text-align: center;
+  width: 1400px; /* Spans the entire page and fills width*/
+}
+
