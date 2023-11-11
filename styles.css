@@ -13,35 +13,48 @@ p { /*Will apply to all generic paragraph lines of code throughout every page; w
 
 /*Containers for my index page start*/
 .get_started, .get_started_2 { /* Using these two div classes will apply to both of my boxes in the header*/
-    border: 2px solid black; /* Border around both the contact us and customer reviews boxes*/
-    background-color: white; /* Code that fills the back-ground color of the box itself */
-    padding: 25px; /*For spacing purposes*/
-    text-align: center; /*Text sits in the center of each box*/
-    color: black; /* Color the text in the center is written in*/
-    font-size: 30px; 
-    display: inline-block; /* Sets up specifications below (width, margin) */
-    width: 35%;
-    margin: 50px;
+    border: 2px solid black;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    display: inline-flex; /* ensures the boxes are in the same line horizontally and fitted to page */
+    width: 30%;
+    margin: 75px; /* Move toward center (increase= more right) */
     text-transform: uppercase;
-    display: flex;
+    justify-content: center; /* Center horizontally within the box */
+    align-items: center; /* Center vertically within the box */
+}
+a:hover {
+  background-color: gray;
+}
+/* 2 boxes in header finalized 11/7 above */
+
+nav ul {
+  list-style-type: none; /* Remove bullet points */
+  text-align: center; /* Center-align the links */
 }
 
-nav ul li { /*Moves my directory (of all three pages) to the center)*/
-  list-style-type: none; /* Used chat gpt to get rid of bullet points from unordered list*/
-  margin: 20px 20px 20px 20px; /*Spacing for all of my sections separated between one another*/
-  list-style-type: none; /*Gets rid of bullet points I made in HTML*/
-  text-align: center; /*Aligned in the middle of the page*/
-  font-weight: bold; /* Bolded writing */
-  font-size: 20px; 
-  text-transform: uppercase;
+nav ul li {
+  margin: 20px 20px 20px 20px; /* Spacing for all sections separated between one another */
+  display: inline-block; /* Display the list items in a horizontal line */
+  font-weight: bold; /* Bold the text */
+  font-size: 30px;
+  text-transform: capitalize;
 }
 
+/* Navigation style set for all pages finalized 11/7 above*/ 
 
-.core_values { 
+/* pic of Kyle using in-line css */
+
+.court_pic { /* Moves the court pic and the text to the right*/
+  float: right;
   text-align: right;
-  list-style-type: none; /* Used chat gpt to get rid of bullet points from unordered list*/
 }
 
+/* IMPORTANT: need to figure out how to get the pic above the footer info */ 
+/* IMPORTANT: need to figure out how to get the info page to be full screen like the rest of the pages */ 
 
 
 /* Containers for my form page starts */
@@ -50,9 +63,55 @@ form { /*Will apply to both the customer feedback dropbox and the employee feedb
   display: inline-block; /* Eligible for properties below like width, border, height, etc*/
   border: 1px solid #cccccc; /* Code for the border that will surround both of the form dropboxes*/
   box-shadow: 0px 2px 2px black, 0px 0px 5px black; /* Each of these pixel specifications cover the height, width, and length of the shadow or essentially the radius*/
-  border-radius: 10px 20px 15px 5px; 
-  margin: 4px; /*Sets a 4 pixel margin on all sides*/
+  border-radius: 10px 20px 15px 10px; 
+  margin: 10px; /*Sets a 4 pixel margin on all sides*/
   text-align: center;
-  width: 1400px; /* Spans the entire page and fills width*/
+  width: 100%; /* Spans the entire page and fills width*/
 }
+
+footer {
+  text-align: right;
+  font-size: 15px;
+}
+
+article {
+  text-align: center;
+  font-size: 25px;
+}
+
+/* Content for info page stated on nov 7 */
+
+.ceo_box h1 {
+  background-color: gray;
+  width: 300px;
+  border: 15px solid white;
+  padding-top: 50px;
+  padding-right: 400px;
+  padding-bottom: 50px;
+  padding-left: 400px;
+  margin: 20px;
+  color: black;
+}
+
+.head_deps h2 { /* titles of the head positions beneath CEO */
+  background-color: white;
+  width: 300px;
+  border: 15px solid black;
+  padding: 50px;
+  margin: 20px;
+  display: inline-flex;
+  text-align: center;
+}
+
+.head_deps ul{ /* titles of roles beneath head positions */
+  background-color: black;
+  width: 150px;
+  border: 15px solid gray;
+  padding: 50px;
+  margin: 20px;
+  display: inline-block;
+  text-align: center;
+  color: white;
+}
+
 
