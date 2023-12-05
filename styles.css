@@ -1,18 +1,16 @@
-header {
 
-}
 /* A couple entities that will apply to all of my pages */
 body { /* The following pieces will apply to my entire body of content*/
   background-color: #FFC72C; /* Entire body of content with the background color of the specific Quipli gold logo*/
   font-family:'Times New Roman', Times, serif; /*Assigns font for all pages */
-  color: black /*Text color for all pages*/
+  color: black; /*Text color for all pages*/
+  width: 80%;
 }
 
 p { /*Will apply to all generic paragraph lines of code throughout every page; wanted to make a little bit bigger*/
   font-size: 24px; 
   font-weight: bold;
 }
-
 
 /*Containers for my index page start*/
 .get_started, .get_started_2 { /* Using these two div classes will apply to both of my boxes in the header*/
@@ -51,13 +49,22 @@ nav ul li {
 
 /* pic of Kyle using in-line css */
 
-.court_pic { /* Moves the court pic and the text to the right*/
-  float: right;
-  text-align: right;
+.container { /* This is for the first section of content: my bosses pics, and the text in the middle. it is the container for the whole display */
+  display: flex;
+  column-gap: 300px;
 }
 
-/* IMPORTANT: need to figure out how to get the pic above the footer info */ 
-/* IMPORTANT: need to figure out how to get the info page to be full screen like the rest of the pages */ 
+.boss_1 {
+  height: 600px;
+  width: 300px;
+  margin-left: 500px;
+}
+
+.boss_2 {
+  height: 600px;
+  width: 300px;
+  margin-left: 200px;
+}
 
 
 /* Containers for my form page starts */
