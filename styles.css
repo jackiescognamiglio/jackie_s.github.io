@@ -70,12 +70,13 @@ nav ul li {
 
 form { /*Will apply to both the customer feedback dropbox and the employee feedback dropbox*/
   display: inline-block; /* Eligible for properties below like width, border, height, etc*/
-  border: 1px solid #cccccc; /* Code for the border that will surround both of the form dropboxes*/
+  border: 5px solid #cccccc; /* Code for the border that will surround both of the form dropboxes*/
   box-shadow: 0px 2px 2px black, 0px 0px 5px black; /* Each of these pixel specifications cover the height, width, and length of the shadow or essentially the radius*/
   border-radius: 10px 20px 15px 10px; 
   margin: 10px; /*Sets a 4 pixel margin on all sides*/
   text-align: center;
   width: 100%; /* Spans the entire page and fills width*/
+  font-size: 24px;
 }
 
 footer {
@@ -83,6 +84,14 @@ footer {
   width: auto;
 }
 
+.social-sharing {
+  text-align: left;
+  margin: 30px;
+}
+
+.social-sharing h2 {
+  margin: 50px;
+}
 
 /* Content for info page stated on nov 7 */
 
@@ -115,6 +124,7 @@ footer {
   display: inline-block;
   text-align: center;
   color: white;
+  font-size: 18px;
 }
 
 /*Making modifications to the circles on index page utilizing w3 schools, youtube videos and chat GPT*/
@@ -146,4 +156,9 @@ footer {
 }
 .companies img {
     margin-right: 10px;
+}
+
+.quipli_intro {
+  border-style: dotted;
+  background-color: white;
 }
